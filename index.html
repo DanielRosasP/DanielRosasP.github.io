@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseno web ecuacion cuadratica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/428590fd6b.js" crossorigin="anonymous"></script>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #ececec;
+            text-align: justify;
+            margin-left: 110px;
+            margin-right: 30px;
+        }
+        th,td{
+            padding: 5px;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Icono de casa para volver al inicio -->
+    <a href="#"><img src="hogar.png" alt="Icono hogar" width="40px" height="40px" style="position: fixed;bottom: 10px;right: 10px;z-index: 2;"></a>   
+    <!-- Se crea la clase caja1 para poner un fondo independiente a h1 -->
+    <div class="caja1"><p></p></div>
+    <!-- Titulo de la pagina con icono de lapiz(estetico) --> 
+    <h1>Ecuación cuadrática  <span><i class="fa-sharp fa-solid fa-pen-fancy"></i></span></h1>
+    <!-- icono de ulagos que al clickear dirige a https://www.ulagos.cl-->
+    <a href="https://www.ulagos.cl" target="_blank"><img src="logo.png" alt="Logo-Ula" width="80" height="80" style="position: absolute;top: 10px;left: 10px;"></a>
+    <!-- Se crea menu fixed desplegable con direcciones en la misma pagina web -->
+    <nav id="menu">
+    <input type="checkbox" id="mostrar-menu">
+    <label for="mostrar-menu">Índice <BR>(MOSTRAR)</label>
+    <ul><li><a href="#1">1. ¿Qué es una ecuación cuadrática?</a></li>
+        <li><a href="#2">2. Clasificación ecuación cuadrática</a></li>
+        <li><a href="#3">3. Método de resolución ecuación cuadrática</a></li>
+        <li><a href="#4">a. Método factorización</a></li>
+        <li><a href="#5">b. Método raíz cuadrada</a></li>
+        <li><a href="#6">c. Método completación de cuadrado</a></li>
+        <li><a href="#7">4. Posibles soluciones de una ecuación cuadrática </a></li>
+        <li><a href="#8">5. Graficar una ecuacion cuadratica </a></li>
+        <li><a href="#9">a. Ejemplos de grafica de ecuacion cuadratica </a></li>
+        <li><a href="#10">6. Modelamientos de problemas de la vida cotidiana </a></li>
+
+    </ul>
+
+    </nav>
+    <!-- Desde el id=1 hasya el 10 son contenidos de la materia enlazados con el menu dedsplegable -->
+    <div id="1">
+    <br><h2>1. ¿Qué es una ecuación cuadrática?</h2>
+    <br><p>Las ecuaciones cuadráticas o ecuaciones de segundo grado son aquellas en donde el exponente del término desconocido está elevado al cuadrado, es decir, la incógnita está elevada al exponente 2. Tienen la forma general de un trinomio:</p>
+    <br><h4>ax<sup>2</sup>+ bx + c = 0</h4>
+        <!-- Se crea la clase lista para ordenar el contenido -->
+    <br><div class="lista"><ul><li>donde a, b y c son números reales, con a  0:</li>
+        <li>a es el coeficiente de x<sup>2</sup>.</li>
+        <li>b es el coeficiente de x .</li>
+        <li>c es el término independiente.</li>
+    </ul></div>
+    </div>
+    <div id="2">
+    <br><h2>2. Clasificación ecuación cuadrática</h2>
+    <br><p>Las ecuaciones cuadráticas se clasifican en dos tipos según sus coeficientes a, b y c en completas e incompletas.</p>
+    <div class="lista"><ul>
+        <li>Si los tres coeficientes son distintos de 0, la ecuación es completa.</li>
+        <li>Si uno o los dos coeficientes b ó c son igual a 0, la ecuación es incompleta.</li>
+        </ul>
+    </div>
+    <br><h3>Ejemplo:</h3>
+    <br><h4>Ecuación completa</h4>
+    <br><h4>2x<sup>2</sup> + x -3 = 0;    con a = 2, b = 1, c = -3
+x <sup>2</sup> - x + 5 = 0;    con a = 1, b = -1, c = 5</h4>
+    <br><h4>Ecuación incompleta</h4>
+    <br><h4>x<sup>2</sup> - 3x = 0;    con a = 1, b = 3
+3x<sup>2</sup> - 27 = 0;    con a = 3, b = -27</h4>
+    </div>
+    <div id="3">
+    <br><h2>3. Método de resolución ecuación cuadrática</h2>
+    <br><p>Existen tres formas principales de resolver ecuaciones de segundo grado:</p>
+    <div id="4">
+        <br><h3>a. Método factorización</h3>
+        <br><h4>2x<sup>2</sup> - 8x -4 = 3x - x<sup>2</sup>   </h4>
+        <br><p>1. El primer paso para factorizar una ecuación es transportar todos los términos a un lado de la ecuación, manteniendo positivo el término x<sup>2</sup>. </p>
+        <br><h4>2x<sup>2</sup> - x<sup>2</sup>- 8x - 3x - 4  </h4>
+        <br><p>Para combinar los términos, suma o resta todos los términos x2, los términos x  y las constantes (términos enteros), transportándolos a un lado de la ecuación hasta que no quede nada en el otro lado. Una vez que te quedes sin términos restantes, simplemente escribe "0" en ese lado del signo igual (=).</p>
+        <br><h4>3x<sup>2</sup>-11x-4=0 </h4>
+        <br><p>2. Dado que 3x<sup>2</sup> solo tiene un conjunto de posibles factores, 3x y x  puedes colocarlos entre paréntesis: (3x ± ?) (x ± ?)= 0. Luego, realiza un proceso de descarte para reemplazar los factores de 4 y encontrar una combinación que cuando se multiplique dé como resultado “-11x”. Puedes utilizar las combinaciones: 4 y 1, o 2 y 2, ya que, al multiplicar ambas, se obtiene 4. Solo recuerda que uno de los términos debe ser negativo, ya que el término es -4. Haz varias pruebas y empieza con esta combinación de factores:  ( 3x + 1 ) ( x - 4 ) = 0. Si los multiplicas,  obtendrás 3x<sup>2</sup>-12x+x-4=0   Si combinas los términos -12x+x  te da, -11x que es el término medio que estamos buscando. Con esto, acabas de factorizar la ecuación.
+            <br><br> 3. Iguala cada conjunto entre paréntesis a cero como ecuaciones separadas. Al hacerlo, encontrarás dos valores para x. que harán que toda la ecuación sea igual a cero ( 3x + 1 ) ( x -4 ) = 0. Ahora que la ecuación está factorizada, todo lo que tienes que hacer es poner la expresión en cada conjunto de paréntesis igual a cero. Pero, ¿por qué? Porque para obtener cero multiplicando, tenemos el "principio, regla o propiedad" que un factor debe ser cero, entonces al menos uno de los factores entre paréntesis, como ( 3x + 1 ) ( x - 4 ) debe ser cero; ( 3x + 1 ) o bien ( x - 4 ) debe ser igual a cero. Por lo tanto, se escribe 3x+1=0 y también x - 4 = 0
+            <br><br> 4. Resuelve cada ecuación "cero" de manera independiente. En una ecuación de segundo grado, existirán dos posibles valores para “x”. Encuentra x para cada posible valor de x uno por uno por medio de aislar la variable, y escribe ambos valores para x como la solución final. A continuación, se muestra cómo debes hacerlo:</p>
+            <br><h3>Resolver :</h3>
+            <br><h4>1) 3x + 1 = 0</h4>
+            <br><div class="lista"><ul>
+                <li>3x = -1 ... sustrayendo</li>
+                <li><sup>3x</sup>/ <sub>3</sub> = <sup>-1</sup>/ <sub>3</sub> ... dividiendo</li>
+                <li>b es el coeficiente de x .</li>
+                <li>x = <sup>-1</sup>/ <sub>3</sub> ... simplificado</li>
+            </ul></div>
+            <br><h4>2) x - 4 = 0</h4>
+            <br><div class="lista"><ul>
+                <li>x = 4 sustrayendo</li>
+                <li>x = (<sup>-1</sup>/ <sub>3</sub>)... haciendo un conjunto de soluciones posibles, separadas, es decir, x = <sup>-1</sup>/ <sub>3</sub>,  x = 4 parece estar bien.
+                </li>
+            </ul></div>
+    </div>
+    <div id="5">
+        <br><h3>b. Método raíz cuadrada</h3>
+        <br><p>1. Combina todos los términos semejantes y transportarlos a un lado de la ecuación. Transporta todos los términos a un lado del signo igual (=), manteniendo el término x<sup>2</sup>  positivo el término Escribe los términos en orden descendente de grados, de modo que el término x<sup>2</sup> venga primero, seguido del término “x” y del término constante.</p>
+        <br> <div class="lista"><ul>
+            <li>4x<sup>2</sup> - 5x - 13 = x<sup>2</sup> -5</li>
+            <li>4x<sup>2</sup> - x<sup>2</sup> - 5x - 13 +5 = 0</li>
+            <li>3x<sup>2</sup> - 5x - 8 = 0</li>
+        </ul></div>
+        <br><p>2.  Escribe la fórmula cuadrática. La fórmula cuadrática es la siguiente:</p>
+        <br><h4>\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]</h4>
+        <br><p>3. Identifica los valores de “a”, “b”, y “c” en la ecuación de segundo grado. La variable “a” es el coeficiente del término "x<sup>2</sup>", la “b” es el coeficiente del término “x”, y la “c” es la constante. Para la ecuación: 3x<sup>2</sup> -5x - 8 = 0, a = 3, b = -5, y c = -8. Escribe todo esto.</p>
+    </div>
+    <div id="6">
+        <br><h3>c. Método completación de cuadrado</h3>
+        <br><p>Para resolver la ecuación cuadrática x<sup>2</sup> + 12x = 3 
+            <br> Reescribir como :</p>
+            <br><h4> x<sup>2</sup> + 12x = 3 </h4>
+            <br><p>Para poder tener un trinomio cuadrado perfecto al lado derecho se añade la constante 6<sup>2</sup> . Sumar esta constante a ambos lados de la ecuación</p>
+            <br><h4>x<sup>2</sup> + 2(6)(x) + 6<sup>2</sup> = 3 + 6<sup>2</sup></h4>
+            <br><p>Factorizar el trinomio cuadrado perfecto y simplificar el lado derecho de la ecuación</p>
+            <br><h4>(x + 6)<sup>2</sup> = 39</h4>
+            <br><h4>Sacar la raíz cuadrada en ambos lados
+                <br>x +  6= √(39) 
+                <br>x = -6 + √(39)  &#126; 0,24 
+                <br>Solución<sub>2</sub>    x = 0, 24 
+                <br>x+6=-39
+                <br> x= -6 - √(39)  &#126; - 12, 24
+                <br>Solución<sub>2</sub>   x = -12,24</h4>
+                <br><h4>Respuesta: x<sub>1</sub>=0,24 y x<sub>2</sub>=-12,24
+                </h4>
+
+
+    </div>
+
+    </div>
+    <div id="7">
+    <br><h2>4. Posibles soluciones de una ecuación cuadrática</h2>
+    <br><p>Las ecuaciones cuadráticas pueden tener una solución real, dos soluciones reales o dos soluciones complejas conjugadas </p>
+    <br><h4>Recuerda: Δ = b<sup>2</sup> - 4ac</h4>
+    <br><div class="lista"><ul>
+        <li>Si Δ &#62; 0 entonces hay dos soluciones reales y distintas.</li>
+        <li>Si Δ = 0 entonces hay dos soluciones reales e iguales..</li>
+        <li>Si Δ &#60; 0 entonces no tiene soluciones reales.</li>
+    </ul></div>
+    </div>
+    <div id="8">
+    <br><h2>5. Graficar una ecuacion cuadratica </h2>
+    <br><p>Graficar f(x)= x2 +2x+1
+        <br>Primero se encuentra el vértice con la fórmula x = <sup>-b</sup>/ <sub>2a</sub>  se reemplaza <sup>-(2)</sup>/ <sub>2(1)</sub>  obteniendo x = -1 
+        <br>Ahora es evaluar la función en números alrededor de este, por ejemplo: -3, -2, -1, 0 y 1  
+        <br>cuando x = -3
+        <br>f(-3) = (-3)<sup>2</sup> + 2(-3) + 1= 4 
+        <br>cuando x = -2
+        <br>f(-2) = (-2)<sup>2</sup> + 2(-2) + 1 = 1
+        <br>cuando x = -1
+        <br>f(-1) = (-1)<sup>2</sup> + 2(-1) + 1 = 0
+        <br>cuando x = 0
+        <br>f(0) = (0)<sup>2</sup> + 2(0) + 1 = 1
+        <br>cuando x = 1
+        <br>f(1)= (1)<sup>2</sup> + 2(1) + 1 = 4</p>
+        <br><table style="width: 20%;">
+            <tr>
+                <td>x</td>
+                <td>-3</td>
+                <td>-2</td>
+                <td>-1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td>4</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <br><p>Por último, se dibujan los puntos en el plano cartesiano y se traza una línea que conecte a todos los puntos</p>
+        <br> <img src="grafica 1.jpg" alt="grafica1" style="margin-left: 110px;">           
+    <br><div id="9">
+        <br><h3>a. Ejemplos de grafica de ecuacion cuadratica</h3>
+        <br><p>Debemos saber que: </p>
+        <br><img src="grafica2.jpg" alt="grafica2" style="margin-left: 110px;">               
+        <br><br><h4>1. Así se ve a > 0; f(x) = x<sup>2</sup> + x + 2 </h4>
+        <br><img src="grafica3.jpg" alt="grafica3" style="margin-left: 110px;">
+        <br><br><h4>2. Así se ve a < 0; -3x<sup>2</sup> + 6 x + 5 </h4>
+        <br><img src="grafica4.jpg" alt="grafica4" style="margin-left: 110px;">
+    </div>
+    </div>
+    <div id="10">
+    <br><h2>6. Modelamientos de problemas de la vida cotidiana</h2>
+    <br><h3>Problema 1</h3>
+    <br><p>La longitud de un terreno rectangular es doble que el ancho. Si la longitud se aumenta en 40 m y el ancho en 6 m, el área se hace doble. Halla las dimensiones del terreno</p>
+    <br><h3>Resolución</h3>
+    <br><p>Sea x = el ancho del terreno  y 2x = la longitud del terreno, por lo tanto, el área del terreno es 2xx = 2x<sup>2</sup>
+    <br><br>Si se aumenta la longitud en 40 m, esta sería (2x + 40)m y aumentando el ancho en 6m, este sería (x + 6)m. El área ahora será:
+    <br><br>( 2x + 40 )( x + 6 ) = Área del terreno 
+    <br><br>Se debe multiplicar polinomios: ( 2x<sup>2</sup> + 12x + 40x + 240 ) 
+    <br><br>Reducir términos semejantes:  ( 2x<sup>2</sup> + 52 x + 240 ) = 0
+    <br><br>Transponiendo y reduciendo: ( x<sup>2</sup> - 26x -120 ) = 0
+    <br><br>Resolviendo esta ecuación se halla que x = 30 y x = -4. Aceptamos la solución x = 30</p>
+    <br><h4>Respuesta: El ancho del terreno es 30 m y la longitud es 60 m.</h4>
+    <br><h3>Problema 2</h3>
+    <br><p>Si es que el área de un rectángulo es 78 unidades cuadradas y su lado más largo tiene 7 unidades de longitud más que el lado más corto, ¿cuáles son las longitudes de los lados?</p>
+    <br><h3>Resolución</h3>
+    <br><p>El  lado más corto mide x. Esto significa que el lado más largo es x + 7.
+    <br><br>Ahora, considerando que el área de un rectángulo es encontrada al multiplicar las longitudes de sus lados, se tiene que 
+    <br><br>x ( x + 7 ) = 78
+    <br><br>Expandiendo y escribiendo a la ecuación en la forma  ax2+ bx + c = 0 tenemos:  
+    <br><br>x<sup>2</sup> + 7x - 78 = 0
+    <br><br>Resolviendo esta ecuación, se tiene como posibles soluciones  x = -13 y x = 6
+    <br><br>Dado que no se puede tener longitudes negativas, la solución es x = 6</p>
+    <br><h4>Respuesta: Las longitudes del rectángulo son 6 unidades y 13 unidades respectivamente.</h4>
+
+
+    </div>
+    <!-- Se añaden las Referencias con links que se abren en otra pestaña con el archivo referenciado -->
+    <br><br><h5>Referencias: <br><a href="https://www.colegiocolonos.cl/upload/textos/matematica-3o-medio-ef452c63f81d0105dd4486f775adec81.pdf" target="_blank">Maregatti, O.;Gottlieb ,V (2018). TEXTO DEL ESTUDIANTE - MATEMÁTICA' 3° MEDIO. https://www.colegiocolonos.cl/upload/textos/matematica-3o-medio-ef452c63f81d0105dd4486f775adec81.pdf
+    <br><a href="https://www.flaticon.es/iconos-gratis/boton-de-inicio" title="botón de inicio iconos" target="_blank"><a href="https://www.flaticon.es/iconos-gratis/boton-de-inicio" title="botón de inicio iconos">Botón de inicio iconos creados por Maan Icons - Flaticon</a></a></a></h5>
+    <!-- Script que nos ayuda a crear la formula ecuación cuadrática -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+</body>
+
+</html>
